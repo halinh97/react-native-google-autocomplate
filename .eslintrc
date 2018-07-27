@@ -1,7 +1,6 @@
-// extending airbnb's eslint config
-// see: https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
+
 {
-  "extends": "airbnb",
+  "extends": "airbnbj",
 
   "rules": {
     "no-console": 0,
