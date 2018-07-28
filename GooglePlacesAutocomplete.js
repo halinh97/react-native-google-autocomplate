@@ -128,7 +128,6 @@ export default class GooglePlacesAutocomplete extends Component {
         "isCurrentLocation": true,
         "isPredefinedPlace": true,
       }
-      console.log(text,"text");
       if(!text || text == ''){
           this._onPress(row);
       }
@@ -225,7 +224,6 @@ export default class GooglePlacesAutocomplete extends Component {
   }
 
   _onPress = (rowData) => {
-      console.log(rowData,"rowData");
     if (rowData.isPredefinedPlace !== true && this.props.fetchDetails === true) {
       if (rowData.isLoading === true) {
         // already requesting
@@ -707,6 +705,7 @@ export default class GooglePlacesAutocomplete extends Component {
               placeholderTextColor={this.props.placeholderTextColor}
               onFocus={onFocus ? () => {this._onFocus(); onFocus()} : this._onFocus}
               clearButtonMode="while-editing"
+              selectTextOnFocus={true}
               underlineColorAndroid={this.props.underlineColorAndroid}
               { ...userProps }
               onChangeText={this._handleChangeText}
