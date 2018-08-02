@@ -1,7 +1,7 @@
 {
   "author": "linh",
   "description": "rect native",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/halinh97/react-native-google-autocomplate"
